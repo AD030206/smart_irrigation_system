@@ -15,6 +15,13 @@ Traditional irrigation systems waste water by running at fixed times. This proje
 - Visual and interactive simulation using Cisco Packet Tracer
 - Scalable logic through Home Gateway and IoT Monitor interface
 
+## 🏗️ Overview of the Architecture
+The system is built using Cisco Packet Tracer’s IoT capabilities. All sensor and actuator devices are connected wirelessly to a **DLC100 Home Gateway** using WPA2-PSK encryption for secure communication. The gateway links to a **smartphone** that runs the **IoT Monitor App**, where logical conditions are defined.  
+The simulation includes:
+- A **Humidity Monitor** and **Water Level Monitor** to sense environmental changes
+- A **Sprinkler**, **Humidifier**, and **Drain** as actuators
+- All logic is processed via the gateway and executed based on real-time sensor data
+
 ## 🧠 Logical Conditions Implemented
 
 | Condition Name   | Condition Description                                      | Action Performed            |
