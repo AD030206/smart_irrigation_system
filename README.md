@@ -24,14 +24,15 @@ The simulation includes:
 
 ## 🧠 Logical Conditions Implemented
 
-| Condition Name   | Condition Description                                      | Action Performed            |
-|------------------|------------------------------------------------------------|-----------------------------|
-| `Hum_on`         | Hum_mon Humidity > 45%                                     | Turn ON Humidifier (Hum_1) |
-| `Hum_off`        | Hum_mon Humidity between 30% and 40%                       | Turn OFF Humidifier (Hum_1)|
-| `Sprink_on`      | Wat_mon Water Level < 3.0 cm                               | Turn ON Sprinkler (Sprink_1) & Turn OFF Drain_1 |
-| `Sprink_off`     | Wat_mon Water Level >= 15.0 cm                             | Turn OFF Sprinkler (Sprink_1) |
-| `Drain_off`      | Wat_mon Water Level is between 3.0 cm and 15.0 cm          | Turn OFF Drain_1            |
-| `Drain_on`       | Wat_mon Water Level >= 20.0 cm                             | Turn ON Drain_1             |
+| Condition Name     | Condition Description                                      | Action Performed                             |
+|--------------------|------------------------------------------------------------|----------------------------------------------|
+| `Humidifier_off`   | Hum_mon Humidity > 45%                                     | Set Hum_1 Status to **false**                |
+| `Humidifier_on`    | Hum_mon Humidity between 30% and 40%                       | Set Hum_1 Status to **true**                 |
+| `Sprinkler_on`     | Wat_mon Water Level <= 3.0 cm                              | Set Sprink_1 Status to **true**, Set Drain_1 Status to **false** |
+| `Sprinkler_off`    | Wat_mon Water Level >= 15.0 cm                             | Set Sprink_1 Status to **false**             |
+| `Drain_idle`       | Wat_mon Water Level between 3.0 cm and 15.0 cm             | Set Drain_1 Status to **false**              |
+| `Drain_on`         | Wat_mon Water Level >= 20.0 cm                             | Set Drain_1 Status to **true**               |
+
 
 ## 🧱 Components Used
 
